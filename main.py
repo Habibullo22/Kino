@@ -16,11 +16,11 @@ from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 # =======================
 # SOZLAMALAR
 # =======================
-TOKEN = "8161107014:AAGBWEYVxie7-pB4-2FoGCPjCv_sl0yHogc"
+TOKEN = "8478058553:AAGR0eMotTJy5_zM-65bHGGsm2ImcOKKfeE"
 ADMINS = {5815294733}
 
 # Majburiy obuna kanali (sen aytgansan)
-REQUIRED_CHATS = ["@bypass_bypasss"]
+REQUIRED_CHATS = ["@bypass_bypasss", "@kino_olami_kinolar" ]
 
 # Kino topilmasa yo'naltirish (xohlasang shu kanalingni yoz)
 MOVIES_CHANNEL = "@kino_olami_kinolar"
@@ -277,9 +277,7 @@ async def movies_channel(message: types.Message):
 @dp.message(F.text == "ℹ️ Yordam")
 async def help_cmd(message: types.Message):
     await message.answer(
-        "📌 Kino olish: kod yuboring (masalan: 102)\n"
-        "📌 Admin: kino qo‘shish / o‘chirish / broadcast\n"
-        "📌 /id — guruh chat ID chiqaradi"
+        "📌 Kino olish: kod yuboring (masalan: 100)\n"
     )
 
 @dp.message(F.text == "➕ Kino qo‘shish")
